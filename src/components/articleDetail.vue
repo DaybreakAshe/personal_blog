@@ -7,11 +7,6 @@
         <span class="article_info_label">标签：
         <span v-if="article.labels.length === 0">未分类</span>
         <el-tag v-else class="tag_margin" type="primary" v-for="tag in article.labels" :key="tag">{{ tag }}</el-tag>
-        /**
-          1.key="id"
-          2.v-bind:key="id"
-          3.:key='id'
-         */
         </span>
       </div>
       <div class="article_detail_content" v-html="compiledMarkdown()"></div>
