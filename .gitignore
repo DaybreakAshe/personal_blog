@@ -1,0 +1,9 @@
+.DS_Store
+node_modules/
+dist/
+npm-debug.log
+yarn-error.log
+.idea
+
+
+# 忽略文件夹，指定文件夹将不被打包
