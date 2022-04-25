@@ -1,12 +1,12 @@
 <template>
   <div id="content">
-    <div class="article_wrap" v-for="item in articleList">
+    <div class="article_wrap" v-for="item in articleList" :key="item">
       <div @click="articleEdit(item._id)" class="article_title">{{ item.title }}</div>
       <div class="article_info">
         <span class="article_info_date">发表于：{{ item.date }}</span>
         <span class="article_info_label">标签：
         <span v-if="item.labels.length === 0">未分类</span>
-        <el-tag v-else class="tag_margin" type="primary" v-for="tag in item.labels">{{ tag }}</el-tag>
+        <el-tag v-else class="tag_margin" type="primary" v-for="tag in item.labels" :key="tag">{{ tag }}</el-tag>
         </span>
       </div>
       <div class="article_gist">{{ item.gist }}</div>

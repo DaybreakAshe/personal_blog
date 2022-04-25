@@ -268,7 +268,7 @@
 
   .markdown_input {
     float: left;
-    display: inline-block;
+    /* display: inline-block; */
     width: 49%;
     height: 98%;
     background-color: white;
@@ -282,7 +282,7 @@
   .markdown_compiled {
     overflow: auto;
     float: right;
-    display: inline-block;
+    /* display: inline-block; */
     width: 49%;
     height: 100%;
     padding: 5px 0 5px 1%;

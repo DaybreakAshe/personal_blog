@@ -5,6 +5,9 @@
       <router-view name="sidebar"></router-view>
       <router-view></router-view>
     </div>
+    <div class="footer">
+      陕ICP备2021008504号-1&nbsp;联系方式：daybreakashe@gmail.com
+    </div>
   </div>
 </template>
 
@@ -146,5 +149,16 @@ body {
   width: 700px;
   float: left;
   background: white;
+}
+
+.footer{
+  position:fixed;
+  bottom: 0;
+  width: 100%;
+  height: 79px;
+  color: white;
+  background-color: rgb(105, 103, 103);
+  text-align: center;
+  line-height: 79px;
 }
 </style>
